@@ -1,0 +1,399 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en" class="bg-[#050505] text-white font-sans antialiased selection:bg-purple-500 scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Kumar | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="relative min-h-screen overflow-x-hidden bg-[#050505]">
+
+  <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <canvas id="webgl-canvas" class="w-full h-full opacity-80 absolute inset-0"></canvas>
+
+    <div class="absolute top-[10%] right-[-5%] w-[650px] h-[650px] bg-gradient-to-br from-purple-700 via-fuchsia-600 to-orange-500 rounded-full blur-[140px] opacity-25"></div>
+    <div class="absolute bottom-[15%] left-[-10%] w-[550px] h-[550px] bg-gradient-to-tr from-orange-600 via-purple-600 to-transparent rounded-full blur-[130px] opacity-15"></div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/40"></div>
+  </div>
+
+  <div class="relative z-10 flex flex-col min-h-screen">
+
+    <nav class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+      <div class="text-xl font-black tracking-tighter">Portfolio<span class="text-orange-500">.</span></div>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-400">
+        <a href="#home" class="hover:text-white transition-colors">Home</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#connect" class="hover:text-white transition-colors">Connect</a>
+      </div>
+      <a href="mailto:aryan0427kumar@gmail.com" class="backdrop-blur-md bg-white/[0.03] border border-white/[0.08] px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide hover:bg-white/[0.08] hover:border-orange-500/40 transition-all duration-300">
+        Let's Connect
+      </a>
+    </nav>
+
+    <main class="w-full max-w-7xl mx-auto px-6 py-12 md:py-24 flex flex-col justify-center">
+
+      <section id="home" class="max-w-4xl space-y-6">
+        <div class="inline-flex items-center gap-2 backdrop-blur-md bg-white/[0.02] border border-white/[0.05] px-4 py-1.5 rounded-full text-xs font-mono tracking-wider text-orange-400 uppercase">
+          <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+          Open to Opportunities
+        </div>
+
+        <h1 class="text-5xl md:text-8xl font-black tracking-tight leading-[0.95] bg-gradient-to-b from-white via-neutral-200 to-neutral-600 bg-clip-text text-transparent">
+          Aryan Kumar<br/>
+          <span class="bg-gradient-to-r from-purple-400 via-fuchsia-500 to-orange-400 bg-clip-text text-transparent">Experiences.</span>
+        </h1>
+
+        <p class="text-neutral-400 text-lg md:text-xl max-w-xl font-light leading-relaxed">
+           Management professional specializing in corporate financial modeling, predictive risk architecture, and enterprise business intelligence frameworks </p>
+
+        <div class="pt-4 flex flex-wrap gap-4">
+          <a href="#projects" class="bg-gradient-to-r from-purple-600 to-orange-600 hover:from-purple-500 hover:to-orange-500 px-8 py-4 rounded-2xl font-semibold text-sm tracking-wide shadow-lg shadow-purple-500/20 hover:shadow-orange-500/30 hover:scale-[1.02] transition-all duration-300 text-center">
+            View My Projects
+          </a>
+          <a href="#about" class="backdrop-blur-md bg-white/[0.02] border border-white/[0.08] hover:bg-white/[0.06] px-8 py-4 rounded-2xl font-semibold text-sm tracking-wide transition-all duration-300 text-center">
+            Read Journey
+          </a>
+        </div>
+      </section>
+
+      <div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="backdrop-blur-2xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 hover:border-purple-500/30 transition-all duration-500 group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all duration-500"></div>
+          <div class="h-12 w-12 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-orange-500/20 border border-purple-500/30 flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform duration-300">⚡</div>
+          <h3 class="text-xl font-bold mb-2">Financial Analysis</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Looking closely at company financial statements, checking profit margins, and using data to build simple, accurate financial plans and business models.</p>
+        </div>
+
+        <div class="backdrop-blur-2xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 hover:border-orange-500/30 transition-all duration-500 group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-24 h-24 bg-orange-500/10 rounded-full blur-2xl group-hover:bg-orange-500/20 transition-all duration-500"></div>
+          <div class="h-12 w-12 rounded-2xl bg-gradient-to-tr from-orange-500/20 to-purple-500/20 border border-orange-500/30 flex items-center justify-center mb-6 text-orange-400 group-hover:scale-110 transition-transform duration-300">📊</div>
+          <h3 class="text-xl font-bold mb-2">Risk Management</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Studying different types of financial risks—like credit, market, and operational risks—especially inside banks, to help businesses avoid losing money.</p>
+        </div>
+
+        <div class="backdrop-blur-2xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 hover:border-purple-500/30 transition-all duration-500 group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all duration-500"></div>
+          <div class="h-12 w-12 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-fuchsia-500/20 border border-purple-500/30 flex items-center justify-center mb-6 text-fuchsia-400 group-hover:scale-110 transition-transform duration-300">✨</div>
+          <h3 class="text-xl font-bold mb-2">Data Visualization</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Turning big tables of business data and numbers into clean, easy-to-understand charts and dashboards using MS Excel and Power BI.</p>
+        </div>
+      </div>
+
+      <section id="projects" class="mt-40 space-y-12 relative z-20">
+        <div class="space-y-2">
+          <h2 class="text-4xl md:text-6xl font-black tracking-tight bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-transparent">
+            Strategic Finance & Data Portfolios
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+
+          <!-- Project 01 -->
+          <div class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 hover:border-purple-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between min-h-[450px] w-full max-w-[500px] mx-auto">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.12] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-600/0 to-purple-600/0 group-hover:to-purple-600/[0.03] transition-all duration-500 pointer-events-none"></div>
+
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-xs font-mono text-neutral-500">01 / RISK MANAGEMENT</span>
+                <div class="text-neutral-400 group-hover:text-purple-400 transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-3xl font-black tracking-tight text-white group-hover:text-purple-300 transition-colors">Risk Architecture & Banking Systems</h3>
+              <p class="text-neutral-400 text-sm leading-relaxed font-light">Conducted a comprehensive risk assessment across public and private sector banking institutions. Evaluated three consecutive years of audited financial statements to isolate market, credit, and operational vulnerabilities, culminating in a 25+ page compliance and strategic insight roadmap.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Financial Analysis</span>
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Corporate Compliance</span>
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Risk Assessment</span>
+            </div>
+          </div>
+
+          <!-- Project 02 -->
+          <div class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 hover:border-orange-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between min-h-[450px] w-full max-w-[500px] mx-auto">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.12] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-500/0 group-hover:to-orange-500/[0.03] transition-all duration-500 pointer-events-none"></div>
+
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-xs font-mono text-neutral-500">02 / FINANCIAL MODELING</span>
+                <div class="text-neutral-400 group-hover:text-orange-400 transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-3xl font-black tracking-tight text-white group-hover:text-orange-300 transition-colors">Quantitative Valuation & Corporate Strategy</h3>
+              <p class="text-neutral-400 text-sm leading-relaxed font-light">Engineered structured quantitative valuation models to stress-test core asset management rules and calculate intrinsic corporate worth. Integrated fundamental macroeconomic indicators with forecasting data to evaluate long-term financial strategies.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Corporate Strategy</span>
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Financial Modeling</span>
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">MS Excel</span>
+            </div>
+          </div>
+
+          <!-- Project 03 -->
+          <div class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 hover:border-orange-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between min-h-[450px] w-full max-w-[500px] mx-auto">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.12] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-500/0 group-hover:to-orange-500/[0.03] transition-all duration-500 pointer-events-none"></div>
+
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-xs font-mono text-neutral-500">03 / BUSINESS ANALYTICS</span>
+                <div class="text-neutral-400 group-hover:text-orange-400 transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-3xl font-black tracking-tight text-white group-hover:text-orange-300 transition-colors">Enterprise Performance & Data Mapping</h3>
+              <p class="text-neutral-400 text-sm leading-relaxed font-light">Deployed project-based learning metrics to dissect corporate operational models, working capital management, and retail performance algorithms for major enterprise systems. Optimized unstructured data points to map market trends.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Business Analysis</span>
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Data Interpretation</span>
+              <span class="text-xs font-mono bg-white/[0.03] border border-white/[0.05] px-3 py-1 rounded-full text-neutral-300">Excel Skills</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="about" class="mt-44 space-y-16 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+          <div class="md:col-span-8 space-y-2">
+            <h2 class="text-4xl md:text-6xl font-black tracking-tight bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-transparent">Behind The Numbers</h2>
+          </div>
+          <div class="md:col-span-4 text-left md:text-right">
+            <span class="text-sm font-mono text-neutral-500">Based in Dehradun, India</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <div class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 md:col-span-8 flex flex-col justify-between relative overflow-hidden group">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.05] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="space-y-6">
+              <div class="flex items-center gap-2 text-xs font-mono text-neutral-500">
+              </div>
+              <p class="text-xl md:text-2xl text-neutral-200 leading-relaxed font-light font-sans">I love working where business data meets financial strategy. With my background in <span class="text-purple-400 font-medium">Finance and Business Analytics</span>, my goal is to take complicated company data, spreadsheets, and financial numbers and turn them into simple, clear charts that help managers make smart decisions.
+
+Outside of numbers, I enjoy <span class="text-purple-400 font-medium">leading teams</span>. I manage student activities as a club president and help coordinate campus events, which helps me bring strong teamwork and communication to the professional world.</p>
+              <p class="text-neutral-400 text-sm leading-relaxed max-w-2xl">Whether optimization takes place inside structured back-end data pipelines, custom predictive model nodes, or complex CSS layouts, I construct digital platforms that load instantly, scale efficiently, and leave a memorable visual footprint.</p>
+            </div>
+            <div class="pt-8 grid grid-cols-2 md:grid-cols-3 gap-4 border-t border-white/[0.05] mt-6">
+              <div>
+                <div class="text-xs font-mono text-neutral-500">SPECIALIZATION</div>
+                <div class="text-sm font-semibold text-neutral-200 mt-1">Finance & Analytics</div>
+              </div>
+              <div>
+                <div class="text-xs font-mono text-neutral-500">LEADERSHIP</div>
+                <div class="text-sm font-semibold text-neutral-200 mt-1">Eco Club President</div>
+              </div>
+              <div class="col-span-2 md:col-span-1">
+                <div class="text-xs font-mono text-neutral-500">CURRENT STATUS</div>
+                <div class="text-sm font-semibold text-orange-400 flex items-center gap-1.5 mt-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-orange-400 animate-ping"></span> Open for Internships
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-3xl p-8 md:col-span-4 flex flex-col justify-between relative overflow-hidden group aspect-square md:aspect-auto">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.05] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="space-y-4">
+              <div class="text-xs font-mono text-neutral-500 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span> BUSINESS_ROOM.EXE
+              </div>
+              <h3 class="text-xl font-bold tracking-tight">Skill Radar</h3>
+            </div>
+            <div class="space-y-3 my-4">
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs font-mono"><span class="text-neutral-300">Advanced MS Excel</span><span class="text-neutral-500">90%</span></div>
+                <div class="h-[2px] bg-white/[0.05] w-full rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-purple-500 to-fuchsia-500 w-[90%]"></div></div>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs font-mono"><span class="text-neutral-300">Financial Modeling</span><span class="text-neutral-500">85%</span></div>
+                <div class="h-[2px] bg-white/[0.05] w-full rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-fuchsia-500 to-orange-500 w-[85%]"></div></div>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between text-xs font-mono"><span class="text-neutral-300">Data Visualization (Power BI)</span><span class="text-neutral-500">75%</span></div>
+                <div class="h-[2px] bg-white/[0.05] w-full rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 w-[80%]"></div></div>
+              </div>
+            </div>
+            <div class="text-xs font-mono text-neutral-400 leading-relaxed bg-white/[0.02] border border-white/[0.05] p-3 rounded-xl">
+              <h3 class="text-orange-400 font-semibold">Active Interests:</h3>
+              <p>Studying corporate risk trends, building dynamic business dashboards, and learning advanced tools to analyze financial markets.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="mt-48 pt-12 border-t border-white/[0.05] space-y-12 relative z-20">
+        <div class="space-y-2">
+          <h2 class="text-4xl md:text-6xl font-black tracking-tight bg-gradient-to-b from-white to-neutral-500 bg-clip-text text-transparent">
+            Let's Initialize
+          </h2>
+          <p class="text-neutral-400 text-sm max-w-sm font-light">Have an interesting project map, data architecture problem, or an ecosystem to scale? Let's connect.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <a href="https://www.linkedin.com/in/aryankumaruk/" target="_blank" class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 hover:border-purple-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between min-h-[140px]">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.1] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="flex justify-between items-center w-full">
+              <span class="text-xs font-mono text-neutral-500">01 / PROFESSIONAL</span>
+              <span class="text-neutral-400 group-hover:text-purple-400 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+              </span>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-white group-hover:text-purple-300 transition-colors">LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/aryan0427kumar-crypto" target="_blank" class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 hover:border-orange-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between min-h-[140px]">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.1] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="flex justify-between items-center w-full">
+              <span class="text-xs font-mono text-neutral-500">02 / SOURCE_CODE</span>
+              <span class="text-neutral-400 group-hover:text-orange-400 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+              </span>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-white group-hover:text-orange-300 transition-colors">GitHub</span>
+          </a>
+
+          <a href="mailto:aryan0427kumar@gmail.com" class="backdrop-blur-xl bg-white/[0.01] border border-white/[0.05] rounded-2xl p-6 hover:border-purple-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between min-h-[140px]">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.1] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="flex justify-between items-center w-full">
+              <span class="text-xs font-mono text-neutral-500">03 / DIRECT_INBOX</span>
+              <span class="text-neutral-400 group-hover:text-purple-400 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+              </span>
+            </div>
+            <span class="text-xl font-bold tracking-tight text-white group-hover:text-purple-300 transition-colors">Email</span>
+          </a>
+
+          <a href="Aryan_Kumar_Resume.pdf" download class="backdrop-blur-xl bg-white/[0.02] border border-orange-500/20 rounded-2xl p-6 hover:border-orange-500/50 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between min-h-[140px] bg-gradient-to-br from-orange-500/[0.02] to-transparent">
+            <div class="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/[0.12] to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out pointer-events-none"></div>
+            <div class="flex justify-between items-center w-full">
+              <span class="text-xs font-mono text-orange-400">04 / DOSSIER.PDF</span>
+              <span class="text-orange-400 group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" /></svg>
+              </span>
+            </div>
+            <span class="text-xl font-black tracking-tight text-white group-hover:text-orange-300 transition-colors">Download CV</span>
+          </a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('webgl-canvas');
+    const scene = new THREE.Scene();
+
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 5;
+
+    const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const items = [];
+
+    // 1. Torus Donut Object
+    const torusGeometry = new THREE.TorusGeometry(0.8, 0.22, 32, 100);
+    const glossyOrangeMaterial = new THREE.MeshPhysicalMaterial({
+      color: 0xffaa00,
+      roughness: 0.05,
+      metalness: 0.2,
+      clearcoat: 1.0,
+      clearcoatRoughness: 0.02,
+      transmission: 0.4,
+      ior: 1.5,
+      side: THREE.DoubleSide
+    });
+    const torusMesh = new THREE.Mesh(torusGeometry, glossyOrangeMaterial);
+    torusMesh.position.set(1.8, 0.2, 0);
+    scene.add(torusMesh);
+    items.push({ mesh: torusMesh, rotX: 0.008, rotY: 0.005, floatSeed: 0 });
+
+    // 2. Sphere & Cone Peripheral Accents
+    const glossyPurpleMaterial = new THREE.MeshPhysicalMaterial({
+      color: 0x7b2cbf,
+      roughness: 0.08,
+      metalness: 0.8,
+      clearcoat: 1.0,
+      clearcoatRoughness: 0.05,
+      reflectivity: 1.0
+    });
+
+    const sphereGeom = new THREE.SphereGeometry(0.35, 32, 32);
+    const sphereMesh = new THREE.Mesh(sphereGeom, glossyPurpleMaterial);
+    sphereMesh.position.set(-2, 1.4, 0.5);
+    scene.add(sphereMesh);
+    items.push({ mesh: sphereMesh, rotX: 0.003, rotY: 0.009, floatSeed: 2 });
+
+    const coneGeom = new THREE.ConeGeometry(0.3, 0.7, 32);
+    const coneMesh = new THREE.Mesh(coneGeom, glossyOrangeMaterial);
+    coneMesh.position.set(-1.8, -1.8, 1);
+    scene.add(coneMesh);
+    items.push({ mesh: coneMesh, rotX: 0.006, rotY: 0.004, floatSeed: 4 });
+
+    // Lighting Array
+    const deepOrangeLight = new THREE.DirectionalLight(0xff5500, 3.5);
+    deepOrangeLight.position.set(5, 4, 3);
+    scene.add(deepOrangeLight);
+
+    const vividPurpleLight = new THREE.DirectionalLight(0x9d4edd, 3.5);
+    vividPurpleLight.position.set(-5, -3, 4);
+    scene.add(vividPurpleLight);
+
+    const crispWhiteLight = new THREE.DirectionalLight(0xffffff, 2.0);
+    crispWhiteLight.position.set(0, 5, 2);
+    scene.add(crispWhiteLight);
+
+    const baseAmbient = new THREE.AmbientLight(0x180b30, 2.5);
+    scene.add(baseAmbient);
+
+    // Mouse Controls
+    let targetX = 0, targetY = 0;
+    let mouseX = 0, mouseY = 0;
+
+    window.addEventListener('mousemove', (event) => {
+      mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+      mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+    });
+
+    const clock = new THREE.Clock();
+
+    const animate = () => {
+      const elapsed = clock.getElapsedTime();
+      targetX += (mouseX - targetX) * 0.04;
+      targetY += (mouseY - targetY) * 0.04;
+
+      items.forEach((item) => {
+        item.mesh.position.y += Math.sin(elapsed + item.floatSeed) * 0.0015;
+        item.mesh.rotation.x += item.rotX + (targetY * 0.005);
+        item.mesh.rotation.y += item.rotY + (targetX * 0.005);
+      });
+
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>
